@@ -1,0 +1,36 @@
+{
+  "name": "json-merger",
+  "version": "1.0.0",
+  "description": "Tool for merging multiple json files.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --preset es2015-node -d lib",
+    "start": "babel-node src/index.js"
+  },
+  "bin": {
+    "json-merger": "lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipvalverde/json-merger.git"
+  },
+  "keywords": [
+    "node",
+    "cli",
+    "json"
+  ],
+  "author": "Israel Valverde <israelpereiravalverde@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ipvalverde/json-merger/issues"
+  },
+  "homepage": "https://github.com/ipvalverde/json-merger#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "merge": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0"
+  }
+}
